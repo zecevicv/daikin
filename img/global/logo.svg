@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202.774" height="38.856" viewBox="0 0 202.774 38.856">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2306" data-name="Rectangle 2306" width="202.774" height="38.856" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_18541" data-name="Group 18541" transform="translate(0 0)">
+    <g id="Group_18541-2" data-name="Group 18541" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_23435" data-name="Path 23435" d="M117.244,38.257A6.952,6.952,0,0,0,123.2,32.9s.693-3.836-.891-5.243a4.051,4.051,0,0,0-2.622-.857h-4.132l-2.976,11.457Zm-16.368,5.165,6.036-22.182h16.2s11.149.816,9.99,11.19c-.033.3-.571,9.237-12.461,10.992Z" transform="translate(-61.102 -12.865)" fill="#008fd2"/>
+      <path id="Path_23436" data-name="Path 23436" d="M197.59,34.118l-1.1-5.678-3.394,5.678Zm-7.5,5.083-2.911,4.221h-7.11l13.457-22.181h12.309l4.281,22.181H199.38l-.819-4.221Z" transform="translate(-109.072 -12.866)" fill="#008fd2"/>
+      <path id="Path_23437" data-name="Path 23437" d="M0,0H45.812L0,38.856Z" transform="translate(0 0)" fill="#2dbff3"/>
+      <path id="Path_23438" data-name="Path 23438" d="M22.9,0H0V19.428Z" transform="translate(0 0)" fill="#1a1818"/>
+      <path id="Path_23439" data-name="Path 23439" d="M395.167,21.24h10.78l-5.952,22.181H389.216Z" transform="translate(-235.754 -12.866)" fill="#008fd2"/>
+      <path id="Path_23440" data-name="Path 23440" d="M307.281,43.422h9.793l1.772-6.706,5.416,6.706h11.974l-8.631-11.263L341.029,21.24H329.7l-8.58,6.793,1.833-6.793H312.73Z" transform="translate(-186.125 -12.866)" fill="#008fd2"/>
+      <path id="Path_23441" data-name="Path 23441" d="M264.995,43.422l5.951-22.181h10.779l-5.951,22.181Z" transform="translate(-160.511 -12.866)" fill="#008fd2"/>
+      <path id="Path_23442" data-name="Path 23442" d="M429.577,43.422h7.463l3.467-12.655,4.367,12.655h12.065l6.036-22.181h-7.96l-3.394,12.228L446.945,21.24H435.585Z" transform="translate(-260.201 -12.866)" fill="#008fd2"/>
+    </g>
+  </g>
+</svg>
