@@ -1165,3 +1165,96 @@ body {
     padding-top: 4.66vw;
   }
 }
+
+/* #Projects
+================================================== */
+.projects {
+  background-color: black;
+  padding-bottom: 7.8vw;
+  border-bottom: 1px solid #e3e3e354;
+}
+
+.projects li {
+  position: relative;
+}
+
+.projects .img {
+  position: relative;
+}
+
+.projects .img a {
+  position: relative;
+}
+
+.projects .img a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.829), transparent);
+}
+
+.projects .img img {
+  width: 100%;
+  height: 29.16vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projects .text {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 2vw;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .projects ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .projects li {
+    position: relative;
+    flex: 0 0 38%;
+  }
+  
+  .projects li:nth-child(1),
+  .projects li:nth-child(5),
+  .projects li:nth-child(9),
+  .projects li:nth-child(13),
+  .projects li:nth-child(18),
+  .projects li:nth-child(22),
+  .projects li:nth-child(26) {
+    flex: 0 0 62%;
+  }
+  
+  .projects li:nth-child(4),
+  .projects li:nth-child(8),
+  .projects li:nth-child(12),
+  .projects li:nth-child(16),
+  .projects li:nth-child(20),
+  .projects li:nth-child(24),
+  .projects li:nth-child(28) {
+    flex: 0 0 62%;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .projects {
+    padding-bottom: 0;
+    border: none;
+  }
+  
+  .projects .img img {
+    height: 76.53vw;
+  }
+  
+  .projects .text {
+    bottom: 8vw;
+  }
+}
