@@ -1178,8 +1178,13 @@ body {
   position: relative;
 }
 
+.projects li:hover .img img {
+  transform: scale(1.02);
+}
+
 .projects .img {
   position: relative;
+  overflow: hidden;
 }
 
 .projects .img a {
@@ -1201,6 +1206,7 @@ body {
   height: 29.16vw;
   object-fit: cover;
   object-position: center;
+  transition: all .4s ease;
 }
 
 .projects .text {
