@@ -1819,3 +1819,139 @@ body {
     margin: 8vw 0 11.33vw 0;
   }
 }
+
+/* #Blog Post
+================================================== */
+.blog-post {
+  padding: 3.9vw 0 7.8vw 0;
+}
+
+.blog-post .container {
+  width: 57%;
+}
+
+.blog-post .heading {
+  border-bottom: 1px solid #C7C7C7;
+  padding: 0 12.34vw;
+  padding-bottom: 1.8vw;
+  margin-bottom: 1.5vw;
+  text-align: center;
+}
+
+.blog-post .social {
+  margin-bottom: 2.6vw;
+}
+
+.blog-post .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-post .social li:not(:last-child) {
+  margin-left: 2vw;
+}
+
+.blog-post .social img {
+  width: 1vw;
+  height: 1vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+.blog-post .body > *:not(img) {
+  padding: 0 9.725vw;
+}
+
+/* Fonts */
+.blog-post p {
+  font-size: 1.04vw;
+  line-height: 1.5;
+}
+
+.blog-post h1 {
+  font-size: 2.6vw;
+  line-height: 1.1;
+  margin: .78vw 0;
+}
+
+.blog-post h3 {
+  font-size: 1.45vw;
+}
+
+/* Post Body Margins */
+.blog-post .body img {
+  width: 100%;
+  margin: 3.125vw 0;
+}
+
+.blog-post .body p {
+  margin-bottom: 1vw;
+}
+
+.blog-post .body h3 {
+  margin: 1.5vw 0 1vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .blog-post {
+    padding: 8.66vw 0 17.33vw 0;
+  }
+  
+  .blog-post .container {
+    width: 90%;
+  }
+  
+  .blog-post .heading {
+    padding: 0;
+    padding-bottom: 6vw;
+    margin-bottom: 8vw;
+    text-align: center;
+  }
+  
+  .blog-post .social {
+    margin-bottom: 13.33vw;
+  }
+  
+  .blog-post .social li:not(:last-child) {
+    margin-left: 8vw;
+  }
+  
+  .blog-post .social img {
+    width: 4vw;
+    height: 4vw;
+  }
+  
+  .blog-post .body > *:not(img) {
+    padding: 0;
+  }
+  
+  /* Fonts */
+  .blog-post p {
+    font-size: 4.26vw;
+    line-height: 1.25;
+  }
+  
+  .blog-post h1 {
+    font-size: 8vw;
+    line-height: 1.1;
+    margin: 2vw 0;
+  }
+  
+  .blog-post h3 {
+    font-size: 5.33vw;
+  }
+  
+  /* Post Body Margins */
+  .blog-post .body img {
+    margin: 8.8vw 0;
+  }
+  
+  .blog-post .body p {
+    margin-bottom: 2.66vw;
+  }
+  
+  .blog-post .body h3 {
+    margin: 8.8vw 0 2.66vw 0;
+  }
+}
