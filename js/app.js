@@ -94,3 +94,41 @@ if (document.querySelector('.projects-slider .slider-1 .swiper') && document.que
     }
   });
 }
+
+/* #Product Slider
+  ======================================================= */
+  if (document.querySelector('.product-slider .swiper')) {
+    const productSliderEl = document.querySelector('.product-slider');
+  
+    if (!productSliderEl.classList.contains('alt')) {
+      new Swiper(".product-slider .swiper", {
+        pagination: {
+          el: ".product-slider .swiper-pagination",
+          type: "progressbar",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1.2
+          },
+          1024: {
+            slidesPerView: 4.2
+          }
+        }
+      });
+    } else {
+      new Swiper(".product-slider .swiper", {
+        pagination: {
+          el: ".product-slider .swiper-pagination",
+          type: "progressbar",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1.2
+          },
+          1024: {
+            slidesPerView: 4.2
+          }
+        }
+      });
+    }
+  }
