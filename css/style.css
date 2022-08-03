@@ -253,6 +253,13 @@ body {
   background-color: white;
 }
 
+/* Secondary */
+.btn-secondary {
+  color: white;
+  border-color: black;
+  background-color: black;
+}
+
 @media (max-width: 1023.98px) {
   /* Btn */
   .btn {
@@ -328,6 +335,18 @@ body {
   .header-search img {
     width: 4.26vw;
   }
+}
+
+/* #Header Always White
+================================================== */
+.header.header-always-white {
+  background-color: white!important;
+  box-shadow: 0 3px 24px #bfbfbf48;
+}
+
+.header.header-always-white .header-hamburger img,
+.header.header-always-white .header-search img {
+  filter: invert(1);
 }
 
 /* #Banner
@@ -1953,5 +1972,38 @@ body {
   
   .blog-post .body h3 {
     margin: 8.8vw 0 2.66vw 0;
+  }
+}
+
+/* #Error
+================================================== */
+.error {
+  padding: 13vw 0;
+  text-align: center;
+}
+
+.error img {
+  margin: 0 auto;
+  width: 28vw;
+  margin-bottom: 2vw;
+}
+
+.error p {
+  margin: 0 0 2.6vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .error {
+    padding: 35vw 0 25vw 0;
+    text-align: center;
+  }
+  
+  .error img {
+    width: 75vw;
+    margin-bottom: 10vw;
+  }
+  
+  .error p {
+    margin: 0 0 6.65vw 0;
   }
 }
