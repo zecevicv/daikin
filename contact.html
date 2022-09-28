@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="he-IL" dir="rtl">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="daikin">
+  <title>daikin</title>
+
+  <!-- Style (Vendor) -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/elevate-framework.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.png">
+
+  <!-- Google Map -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 11,
+
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+        // How you would like to style the map. 
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{
+          "featureType": "all",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#f5f5f5"
+          }]
+        }, {
+          "featureType": "all",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#616161"
+          }]
+        }, {
+          "featureType": "all",
+          "elementType": "labels.text.stroke",
+          "stylers": [{
+            "color": "#f5f5f5"
+          }]
+        }, {
+          "featureType": "all",
+          "elementType": "labels.icon",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "administrative.country",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#9e9e9e"
+          }, {
+            "lightness": 35
+          }, {
+            "weight": 0.5
+          }]
+        }, {
+          "featureType": "administrative.province",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "administrative.land_parcel",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#bdbdbd"
+          }]
+        }, {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#eeeeee"
+          }]
+        }, {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#757575"
+          }]
+        }, {
+          "featureType": "poi.park",
+          "elementType": "labels.text",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "poi.park",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#9e9e9e"
+          }]
+        }, {
+          "featureType": "road",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#ffffff"
+          }]
+        }, {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#dadada"
+          }]
+        }, {
+          "featureType": "road.highway",
+          "elementType": "labels",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "road.highway",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#616161"
+          }]
+        }, {
+          "featureType": "road.arterial",
+          "elementType": "labels",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "road.arterial",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#757575"
+          }]
+        }, {
+          "featureType": "road.local",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "road.local",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#9e9e9e"
+          }]
+        }, {
+          "featureType": "transit.line",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#e5e5e5"
+          }, {
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "transit.station",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "transit.station",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#eeeeee"
+          }]
+        }, {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#c9c9c9"
+          }]
+        }, {
+          "featureType": "water",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#9e9e9e"
+          }]
+        }]
+      };
+
+      // Get the HTML DOM element that will contain your map 
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(40.6700, -73.9400),
+        map: map,
+        title: 'Snazzy!'
+      });
+    }
+  </script>
+
+</head>
+
+<body class="contact-page">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <!-- Hamburger -->
+      <div class="header-hamburger">
+        <a href="#"><img loading="lazy" src="img/icons/hamburger.svg" alt="daikin-img"></a>
+      </div>
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="#"><img loading="lazy" src="img/global/logo.svg" alt="daikin-img"></a>
+      </div>
+      <!-- Search -->
+      <div class="header-search">
+        <a href="#"><img loading="lazy" src="img/icons/search.svg" alt="daikin-img"></a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Banner 2 -->
+  <div class="banner-2">
+    <div class="text">
+      <h1 class="f-d-70 f-m-75">שאלות ותשובות</h1>
+    </div>
+    <div class="img"></div>
+    <div class="banner-nav">
+      <ul>
+        <!-- Item -->
+        <li>
+          <a href="#">
+            <div class="icon"><img loading="lazy" src="img/faq/icon-1.svg" alt="daikin-img"></div>
+            <p class="f-d-22 f-m-27">צור קשר</p>
+          </a>
+        </li>
+        <!-- Item -->
+        <li>
+          <a href="#">
+            <div class="icon"><img loading="lazy" src="img/faq/icon-2.svg" alt="daikin-img"></div>
+            <p class="f-d-22 f-m-27">מתקינים מורשים</p>
+          </a>
+        </li>
+        <!-- Item -->
+        <li>
+          <a href="#">
+            <div class="icon"><img loading="lazy" src="img/faq/icon-3.svg" alt="daikin-img"></div>
+            <p class="f-d-22 f-m-27">מדריכים להורדה</p>
+          </a>
+        </li>
+        <!-- Item -->
+        <li>
+          <a href="#" class="active">
+            <div class="icon"><img loading="lazy" src="img/faq/icon-4.svg" alt="daikin-img"></div>
+            <p class="f-d-22 f-m-27">שאלות תשובות</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact">
+    <div class="container">
+      <!-- Form -->
+      <div class="contact-form">
+        <!-- Form -->
+        <div class="form">
+          <h2 class="f-d-40 f-m-60 medium">שלח לנו הודעה</h2>
+          <form>
+            <div>
+              <input type="text" class="input-primary f-d-18 f-m-30" placeholder="שם פרטי">
+            </div>
+            <div>
+              <input type="text" class="input-primary f-d-18 f-m-30" placeholder="שם משפחה">
+            </div>
+            <div>
+              <input type="text" class="input-primary f-d-18 f-m-30" placeholder="אימייל">
+            </div>
+            <div>
+              <select class="select-secondary f-d-18 f-m-30">
+                <option value="1">נושא</option>
+              </select>
+            </div>
+            <div>
+              <input type="text" class="input-primary f-d-18 f-m-30" placeholder="הודעה">
+            </div>
+          </form>
+          <div>
+            <a href="#" class="btn btn-primary">שלח</a>
+          </div>
+        </div>
+        <!-- Info -->
+        <div class="info">
+          <h2 class="f-d-40 f-m-60 medium">שירות לקוחות דייקין</h2>
+          <h3 class="f-d-18 f-m-30 regular text-gray">כתובת</h3>
+          <p class="f-d-22 f-m-32">רחוב התערוכה 6</p>
+          <p class="f-d-22 f-m-32">תל אביב</p>
+          <p class="f-d-22 f-m-32">ישראל</p>
+          <h3 class="f-d-18 f-m-30 regular text-gray">אימייל</h3>
+          <p class="f-d-22 f-m-32">servicesz@ecp.co.il</p>
+          <h3 class="f-d-18 f-m-30 regular text-gray">טלפון</h3>
+          <p class="f-d-22 f-m-32">1-800-222222</p>
+        </div>
+      </div>
+      <!-- Map -->
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Top -->
+      <div class="top">
+        <!-- Info -->
+        <div class="footer-info">
+          <div class="footer-logo"><a href="#"><img loading="lazy" src="img/global/logo-white.png" alt="daikin-img"></a>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#" class="f-d-20 f-m-32">המוצרים שלנו</a></li>
+              <li><a href="#" class="f-d-20 f-m-32">פרויקטים</a></li>
+              <li><a href="#" class="f-d-20 f-m-32">מדריכים ותפעול </a></li>
+              <li><a href="#" class="f-d-20 f-m-32">אודות</a></li>
+            </ul>
+            <ul>
+              <li><a href="#" class="f-d-20 f-m-32">מגזין</a></li>
+              <li><a href="#" class="f-d-20 f-m-32">צור קשר</a></li>
+              <li><a href="#" class="f-d-20 f-m-32">מתקינים מורשים</a></li>
+              <li><a href="#" class="f-d-20 f-m-32">תקנון</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="footer-contact">
+          <p class="f-d-20 f-m-40">הרשמה לניוזלטר</p>
+          <form>
+            <div>
+              <input type="text" class="input-primary f-d-16 f-m-28" placeholder="*אימייל">
+            </div>
+          </form>
+          <a href="#" class="link link-white f-d-20 f-m-30 medium">שלח</a>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="bottom">
+        <p class="f-d-16 f-m-30">Copyright ©Daikin .All right reserved</p>
+        <a href="https://portfolio.elevate.co.il/" class="f-d-16 f-m-30" target="_blank">© 2022 Design by Elevate</a>
+        <div class="social">
+          <ul>
+            <li><a href="#"><img loading="lazy" src="img/icons/fb.svg" alt="daikin-img"></a></li>
+            <li><a href="#"><img loading="lazy" src="img/icons/in.svg" alt="daikin-img"></a></li>
+            <li><a href="#"><img loading="lazy" src="img/icons/tw.svg" alt="daikin-img"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script (Vendor) -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+
+  <!-- Script -->
+  <script src="js/elevate-framework.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Lazy Loading -->
+  <script src="js/lazyload.min.js"></script>
+  <script>
+    (function () {
+      ll = new LazyLoad({});
+    })();
+  </script>
+
+</body>
+
+</html>

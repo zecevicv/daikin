@@ -40,6 +40,10 @@ body {
   color: #00A1ED;
 }
 
+.text-gray {
+  color: #9E9E9E;
+}
+
 /* #Link
 ================================================== */
 .link {
@@ -211,6 +215,38 @@ body {
   .select-primary {
     padding-left: 4vw;
     background-size: 2vw auto;
+  }
+}
+
+/* Secondary */
+.select-secondary {
+  background-color: transparent;
+  color: black;
+  font-family: inherit;
+  border: none;
+  appearance: none;
+  padding-left: 1.3vw;
+  background-image: url('../img/icons/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-size: .6vw auto;
+  background-position: 0 50%;
+  cursor: pointer;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding-bottom: .55vw;
+  color: #9E9E9E;
+}
+
+.select-secondary option {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 1023.98px) {
+  .select-secondary {
+    padding-left: 4vw;
+    background-size: 2vw auto;
+    padding-bottom: 2vw;
   }
 }
 
@@ -2403,6 +2439,7 @@ body {
 ================================================== */
 .banner-2 {
   position: relative;
+  z-index: 1;
 }
 
 .banner-2 .img {
@@ -2786,5 +2823,144 @@ body {
   .user-guide .list .text a img {
     width: 4vw;
     margin-left: 2.66vw;
+  }
+}
+
+/* #Map
+================================================== */
+.contact #map {
+  width: 100%;
+  height: 35.88vw;
+}
+
+@media (max-width: 1023.98px) {
+  .contact #map {
+    height: 225vw;
+  }
+}
+
+/* #Contact
+================================================== */
+.contact {
+  padding: 7.8vw 0 0 0;
+}
+
+.contact .contact-form {
+  background-color: black;
+  color: white;
+  width: 88.5%;
+  margin: 0 auto;
+  margin-bottom: -6.5vw;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, .6);
+  display: flex;
+  padding: 4.58vw 9.7vw;
+}
+
+/* Form */
+.contact .form {
+  margin-left: 11vw;
+}
+
+.contact .form h2 {
+  margin-bottom: 1.5vw;
+}
+
+.contact .form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 29.7vw;
+}
+
+.contact .form form > div:nth-child(1),
+.contact .form form > div:nth-child(2),
+.contact .form form > div:nth-child(3),
+.contact .form form > div:nth-child(4) {
+  flex: 0 0 47%;
+}
+
+.contact .form form > div {
+  flex: 0 0 100%;
+  margin-bottom: 1.3vw;
+}
+
+.contact .form .btn {
+  margin-top: 1vw;
+}
+
+/* Info */
+.contact .info h3 {
+  margin-top: 2vw;
+}
+
+.contact .info p {
+  margin: .5vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .contact {
+    padding: 12vw 0 0 0;
+  }
+  
+  .contact .contact-form {
+    width: 90%;
+    margin-bottom: -100vw;
+    display: block;
+    padding: 12vw 10vw 13.33vw 10vw;
+  }
+  
+  /* Form */
+  .contact .form {
+    margin-left: 0;
+    margin-bottom: 13.33vw;
+  }
+  
+  .contact .form h2 {
+    margin-bottom: 6vw;
+    text-align: center;
+  }
+  
+  .contact .form form {
+    display: block;
+    width: 100%;
+  }
+
+  .contact .form input,
+  .contact .form select {
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  .contact .form form > div {
+    flex: 0 0 100%;
+    margin-bottom: 5.6vw;
+  }
+
+  .contact .form > div:last-child {
+    display: flex;
+  }
+  
+  .contact .form .btn {
+    margin: 0 auto;
+    margin-top: 4.4vw;
+  }
+  
+  /* Info */
+  .contact .info {
+    text-align: center;
+  }
+
+  .contact .info h2 {
+    margin-bottom: -4vw;
+  }
+
+  .contact .info h3 {
+    margin-top: 8vw;
+  }
+  
+  .contact .info p {
+    margin: 1.33vw 0;
   }
 }
