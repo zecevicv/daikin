@@ -2,6 +2,23 @@
   ======================================================= */
 const header = document.querySelector('.header');
 
+const headerBtn = document.querySelector('.header-hamburger');
+const headerClose = document.querySelector('.header-close');
+
+headerBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  header.classList.add('show');
+  body.classList.add('no-scroll');
+});
+
+headerClose.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  header.classList.remove('show');
+  body.classList.remove('no-scroll');
+});
+
 // Color Change
 if (document.querySelector('.header')) {
   window.addEventListener('scroll', () => {
