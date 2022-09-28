@@ -3095,3 +3095,70 @@ body {
     margin-bottom: 4vw;
   }
 }
+
+/* #User Guide Popup
+================================================== */
+#userGuidePopup {
+  background-color: rgba(0, 0, 0, .4);
+}
+
+#userGuidePopup .popup-content {
+  padding: 3.8vw 0 4.27vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 41%;
+  position: relative;
+}
+
+#userGuidePopup .popup-close {
+  position: absolute;
+  top: 1.6vw;
+  right: 1.6vw;
+}
+
+#userGuidePopup .popup-close img {
+  width: .94vw;
+}
+
+#userGuidePopup p {
+  margin: .5vw 0 2.34vw 0;
+}
+
+#userGuidePopup input {
+  margin-bottom: 3.125vw;
+  text-align: center;
+  width: 23.17vw;
+  border-color: #E1E1E1;
+  color: black;
+}
+
+#userGuidePopup input::placeholder {
+  color: black;
+}
+
+@media (max-width: 1023.98px) {
+  #userGuidePopup .popup-content {
+    padding: 14.4vw 0 16vw 0;
+    width: 85%;
+  }
+  
+  #userGuidePopup .popup-close {
+    top: 6.26vw;
+    right: 6.26vw;
+  }
+  
+  #userGuidePopup .popup-close img {
+    width: 3.5vw;
+  }
+  
+  #userGuidePopup p {
+    margin: 2vw 0 9.33vw 0;
+  }
+  
+  #userGuidePopup input {
+    margin-bottom: 12.66vw;
+    width: 72.66vw;
+  }
+}
