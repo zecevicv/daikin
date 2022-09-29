@@ -10,6 +10,7 @@ headerBtn.addEventListener('click', (e) => {
 
   header.classList.add('show');
   body.classList.add('no-scroll');
+  header.classList.remove('show-search');
 });
 
 headerClose.addEventListener('click', (e) => {
@@ -17,6 +18,7 @@ headerClose.addEventListener('click', (e) => {
 
   header.classList.remove('show');
   body.classList.remove('no-scroll');
+  header.classList.remove('show-search');
 });
 
 // Color Change
@@ -37,6 +39,25 @@ if (document.querySelector('.header')) {
     header.classList.remove('header-scrolled');
   }
 }
+
+const searchBtn = document.querySelector('.header-search');
+const searchClose = document.querySelector('.search-close');
+
+searchBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  header.classList.add('show-search');
+  body.classList.add('no-scroll');
+  header.classList.remove('show');
+});
+
+searchClose.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  header.classList.remove('show-search');
+  body.classList.remove('no-scroll');
+  header.classList.remove('show');
+});
 
 /* #Banner Slider
   ======================================================= */
